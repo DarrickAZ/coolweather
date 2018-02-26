@@ -30,7 +30,7 @@
             />
     </RelativeLayout>
 
-    <!--ListView会在每个子项添加一条分隔线，而使用RecyclerView实现此功能会相对麻烦-->
+    <!--ListView会在每个子项添加一条-->
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
