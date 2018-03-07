@@ -1,3 +1,96 @@
 <resources>
     <string name="app_name">CoolWeather</string>
+
+
+
+
+    <!--login-->
+    <string name="username">User Name:</string>
+    <string name="password">Password:</string>
+    <string name="serverip">Server IP:</string>
+    <string name="lecturerip">Lecturer IP:</string>
+    <string name="autologin">Auto Login</string>
+    <string name="login">LogIn</string>
+    <string name="login_failed_wrong_password">Login failed. Wrong password.</string>
+    <string name="login_failed_user_not_found">Login failed. Wrong User Name.</string>
+    <string name="login_failed_network">Login failed. Network error.</string>
+    <string name="login_success">Login Success.</string>
+    <string name="logining">Logining...</string>
+    <string name="logout">Log Out</string>
+    <string name="login_failed_wrong_server_ip">Login failed.Please check server ip.</string>
+    <string name="lecturerip_null">Lecturer ip is not allowed null</string>
+
+    <!--home-->
+    <string name="course">Class</string>
+    <string name="coursetable">Course Time Table</string>
+    <string name="mainClass">(MainClassRoom)</string>
+    <string name="start_class">Start Class</string>
+    <string name="start_present">Start Present</string>
+    <string name="stop_present">Stop Present</string>
+    <string name="finish_class">Finish Class</string>
+    <string name="exit_tips">Press back again to exit.</string>
+
+    <string name="course_title">Course</string>
+    <string name="course_table_title">Course Table</string>
+    <string name="teaching_mode">Teaching Mode</string>
+    <string name="asking_mode">Asking Mode</string>
+    <string name="discussing_mode">Discussing Mode</string>
+    <string name="start_class_failed">Start Class Failed</string>
+    <string name="finish_class_failed">Finish Class Failed</string>
+    <string name="listen_classrooms">Listen Classrooms</string>
+    <string name="city">City:</string>
+    <string name="district">District:</string>
+    <string name="school">School:</string>
+    <string name="please_select">Please Select</string>
+    <string name="teacher_grade">Teacher/Grade:</string>
+    <string name="teacher">Teacher:</string>
+    <string name="grade">Grade:</string>
+    <string name="class_item">Course:</string>
+    <string name="search">Search</string>
+    <string name="online_course_table_title">Online Course Table</string>
+    <string name="refresh">Refresh</string>
+    <string name="nextweek">PRE</string>
+    <string name="lastweek">NEXT</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="first_class">First Course</string>
+    <string name="second_class">Second Course</string>
+    <string name="third_class">Third Course</string>
+    <string name="fourth_class">Fourth Course</string>
+    <string name="fifth_class">Fifth Course</string>
+    <string name="sixth_class">Sixth Course</string>
+    <string name="seventh_class">Seventh Course</string>
+    <string name="eighty_class">Eighth Course</string>
+    <string name="tips_select_city">Please select city to search.</string>
+    <string name="tips_select_district">Please select district to search.</string>
+    <string name="tips_select_school">Please select school to search.</string>
+    <string name="course_detail_title">CourseInfo(Score: %1$s)</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="first_teacher">First Teacher:</string>
+    <string name="second_teacher">Assist Teacher:</string>
+    <string name="first_classroom">Lecture ClassRoom:</string>
+    <string name="second_classroom">Listened ClassRoom:</string>
+    <string name="tips_select_grade_or_teacher">Please select grade or teacher to search.</string>
+    <string name="error_week_number">Please input the valid week number(Integer which bigger than 1)</string>
+    <string name="classing">Ongoing</string>
+    <string name="unclassed">Un-Occurred</string>
+    <string name="class_unstart">un-Start</string>
+    <string name="class_finished">Finished</string>
+    <string name="go">Go</string>
+    <string name="reach_to_first_week">Already in first week</string>
+    <string name="main_classroom">(Lecturer)</string>
+    <string name="confirm_finish_class">Are you sure to finish class?</string>
+    <string name="dialog_title">Confirm</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="done">Done</string>
+    <string name="about">About</string>
+    <string name="version">Current Version:</string>
 </resources>

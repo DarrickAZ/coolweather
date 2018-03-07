@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.coolweather.android.constant.HttpUrl;
 import com.coolweather.android.db.City;
 import com.coolweather.android.db.County;
 import com.coolweather.android.db.Province;
@@ -145,7 +146,7 @@ public class ChooseAreaFragment extends Fragment {
             currentLevel = LEVEL_PROVINCE;
         }else{
             //若数据库中没有，开始去服务器查询
-            String address = "http://guolin.tech/api/china";
+            String address = HttpUrl.API_CHINA;
             queryFromServer(address,"province");
         }
     }
@@ -167,7 +168,7 @@ public class ChooseAreaFragment extends Fragment {
             currentLevel = LEVEL_CITY;
         }else{
             int provinceCode = selectedProvince.getProvinceCode();
-            String address = "http://guolin.tech/api/china/"+provinceCode;
+            String address = HttpUrl.API_CHINA+provinceCode;
             queryFromServer(address,"city");
         }
     }
@@ -190,7 +191,7 @@ public class ChooseAreaFragment extends Fragment {
         }else{
             int provinceCode = selectedProvince.getProvinceCode();
             int cityCode = selectedCity.getCityCode();
-            String address = "http://guolin.tech/api/china/"+provinceCode+"/"+cityCode;
+            String address = HttpUrl.API_CHINA+provinceCode+"/"+cityCode;
             queryFromServer(address,"county");
         }
     }

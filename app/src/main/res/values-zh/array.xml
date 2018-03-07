@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_menu">
+        <item>@string/course</item>
+        <item>@string/coursetable</item>
+    </string-array>
+
+    <string-array name="teacher_grade_filter">
+        <item>@string/please_select</item>
+        <item>班级</item>
+        <item>教师</item>
+    </string-array>
+
+    <string-array name="grades">
+        <item>一年级</item>
+        <item>二年级</item>
+        <item>三年级</item>
+        <item>四年级</item>
+        <item>五年级</item>
+        <item>六年级</item>
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+    </string-array>
+
+</resources>

@@ -12,6 +12,9 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Now {
 
+    /**
+     * 使用@Serialized注解来让JSON字段和Java字段之间建立映射关系
+     */
     @SerializedName("tmp")
     public String temperature;
 

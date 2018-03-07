@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">酷欧天气</string>
+
+
+
+    <!--login-->
+    <string name="username">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="lecturerip">主讲教室IP:</string>
+    <string name="serverip">服务器IP：</string>
+    <string name="autologin">自动登录</string>
+    <string name="login">登录</string>
+    <string name="login_failed_wrong_password">登录失败，密码错误</string>
+    <string name="login_failed_user_not_found">登录失败，用户名错误</string>
+    <string name="login_failed_network">登录失败，网络错误</string>
+    <string name="login_success">登录成功</string>
+    <string name="logining">登录中...</string>
+    <string name="logout">退出登录</string>
+    <string name="login_failed_wrong_server_ip">登录失败，请检查服务器IP</string>
+    <string name="lecturerip_null">主讲教室IP不能为空</string>
+
+    <!--home-->
+    <string name="course">课堂</string>
+    <string name="coursetable">课表查询</string>
+    <string name="mainClass">（主讲教室）</string>
+    <string name="start_class">上课</string>
+    <string name="start_present">开始演示</string>
+    <string name="stop_present">停止演示</string>
+    <string name="finish_class">下课</string>
+    <string name="exit_tips">再按一次返回键退出</string>
+    <string name="course_title">课堂</string>
+    <string name="course_table_title">课表</string>
+    <string name="teaching_mode">讲课模式</string>
+    <string name="asking_mode">提问模式</string>
+    <string name="discussing_mode">讨论模式</string>
+    <string name="start_class_failed">上课操作失败</string>
+    <string name="finish_class_failed">下课操作失败</string>
+    <string name="listen_classrooms">听课教室</string>
+    <string name="city">市：</string>
+    <string name="district">区/县：</string>
+    <string name="school">学校：</string>
+    <string name="please_select">请选择</string>
+    <string name="teacher_grade">教师/班级：</string>
+    <string name="teacher">教师：</string>
+    <string name="grade">年级：</string>
+    <string name="class_item">课目：</string>
+    <string name="search">查询</string>
+    <string name="online_course_table_title">在线课堂表</string>
+    <string name="refresh">刷新</string>
+    <string name="nextweek">下一周</string>
+    <string name="lastweek">上一周</string>
+
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <string name="first_class">第一节课</string>
+    <string name="second_class">第二节课</string>
+    <string name="third_class">第三节课</string>
+    <string name="fourth_class">第四节课</string>
+    <string name="fifth_class">第五节课</string>
+    <string name="sixth_class">第六节课</string>
+    <string name="seventh_class">第七节课</string>
+    <string name="eighty_class">第八节课</string>
+    <string name="tips_select_city">请选择相应的城市查询</string>
+    <string name="tips_select_district">请选择相应的区县查询</string>
+    <string name="tips_select_school">请选择相应的学校查询</string>
+    <string name="course_detail_title">课程信息(评分：%1$s分)</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="first_teacher">主讲老师：</string>
+    <string name="second_teacher">辅讲老师：</string>
+    <string name="first_classroom">主讲教室：</string>
+    <string name="second_classroom">听课教室：</string>
+    <string name="tips_select_grade_or_teacher">请选择相应的班级或老师查询</string>
+    <string name="error_week_number">请输入正确的周数（整数且大于0）</string>
+    <string name="classing">授课中</string>
+    <string name="unclassed">未授课</string>
+    <string name="class_unstart">未开始</string>
+    <string name="class_finished">已结束</string>
+    <string name="go">Go</string>
+    <string name="reach_to_first_week">已在第一周</string>
+    <string name="main_classroom">(主讲教室)</string>
+    <string name="confirm_finish_class">确认下课?</string>
+    <string name="dialog_title">确认</string>
+    <string name="login_failed">登录失败</string>
+    <string name="done">完成</string>
+    <string name="about">关于</string>
+    <string name="version">当前版本：</string>
+</resources>
