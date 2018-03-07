@@ -1,9 +1,11 @@
 package com.coolweather.android;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.coolweather.android.constant.HttpUrl;
+import com.coolweather.android.constant.UpConstant;
 import com.coolweather.android.db.City;
 import com.coolweather.android.db.County;
 import com.coolweather.android.db.Province;
@@ -107,6 +110,20 @@ public class ChooseAreaFragment extends Fragment {
                 }else if(currentLevel ==LEVEL_CITY){
                     selectedCity = cityList.get(position);
                     queryCounties();
+                }else if(currentLevel == LEVEL_COUNTY){
+                    //第一次进来 城市相关初始化选择 直接打开WeatherActivity 不做任何操作。
+                    String weatherId = countyList.get(position).getWeatherId();
+                    if(getActivity() instanceof MainActivity){
+                        Intent intent = new Intent(getActivity(),WeatherActivity.class);
+                        intent.putExtra(UpConstant.WEATHER_ID,weatherId);
+                        startActivity(intent);
+                        getActivity().finish();
+                    }else if(getActivity() instanceof WeatherActivity){
+                        WeatherActivity activity = (WeatherActivity) getActivity();
+                        activity.drawerLayout.closeDrawers();
+                        activity.swipeRefresh.setRefreshing(true);
+                        activity.requestWeather(weatherId);
+                    }
                 }
             }
         });
@@ -209,7 +226,7 @@ public class ChooseAreaFragment extends Fragment {
                     @Override
                     public void run() {
                         closeProgressDialog();
-                        Toast.makeText(getContext(),"加载失败",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.load_failed),Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -254,7 +271,7 @@ public class ChooseAreaFragment extends Fragment {
     private void showProgressDialog() {
         if(progressDialog ==null){
             progressDialog = new ProgressDialog(getContext());
-            progressDialog.setMessage("正在加载...");
+            progressDialog.setMessage(getString(R.string.loading));
             //是否点击dialog外面会退出弹框
             progressDialog.setCanceledOnTouchOutside(false);
         }

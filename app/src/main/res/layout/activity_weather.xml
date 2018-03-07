@@ -2,7 +2,30 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/colorPrimary">
+
+    <!--背景图片-->
+    <!--由于FrameLayout默认情况下会将控件都放置在左上角，因此ScrollView会完全覆盖住ImageView，从而ImageView也就成为背景图片了-->
+    <ImageView
+        android:id="@+id/bing_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <!--加入滑动侧边栏 城市选择-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!--加入下拉刷新布局-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <!--滚动布局，只允许设置一个直接子布局-->
     <ScrollView
@@ -14,10 +37,13 @@
         >
 
         <!--引入相关布局文件-->
+        <!--fitsSystemWindows true 表示为系统状态栏留出空间-->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
 
             <include layout="@layout/title"/>
             <include layout="@layout/now"/>
@@ -28,6 +54,17 @@
         </LinearLayout>
 
     </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
+        <!--引入城市选择碎片-->
+         <fragment
+             android:id="@+id/choose_area_fragment"
+             android:name="com.coolweather.android.ChooseAreaFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="start"
+             />
+
+    </android.support.v4.widget.DrawerLayout>
 
 </FrameLayout>

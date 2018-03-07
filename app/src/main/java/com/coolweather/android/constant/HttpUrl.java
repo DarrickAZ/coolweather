@@ -12,9 +12,9 @@ public class HttpUrl {
     /**
      * 获取所有的省及直辖市
      */
-    public static final String API_CHINA = "http://guolin.tech/api/china";
+    public static final String API_CHINA = "http://guolin.tech/api/china/";
 
 
-
-
+    public static final String API_WEATHER =  "http://guolin.tech/api/weather";
+    public static final String API_BING_PIC = "http://guolin.tech/api/bing_pic";
 }

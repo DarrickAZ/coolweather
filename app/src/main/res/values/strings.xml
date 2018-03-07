@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">CoolWeather</string>
+    <string name="load_failed">Load Failed.</string>
+    <string name="loading">Loading...</string>
+    <string name="load_weatherinfo_failed">Load WeatherInfo Failed.</string>
 
 
 
 
+
+    <!--####################################################################################################-->
     <!--login-->
     <string name="username">User Name:</string>
     <string name="password">Password:</string>
@@ -93,4 +98,5 @@
     <string name="done">Done</string>
     <string name="about">About</string>
     <string name="version">Current Version:</string>
+
 </resources>
