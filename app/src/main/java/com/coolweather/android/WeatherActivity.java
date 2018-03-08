@@ -86,7 +86,8 @@ public class WeatherActivity extends AppCompatActivity {
         if(Build.VERSION.SDK_INT >= 21){
             View decorView = getWindow().getDecorView();
             //FULLSCREEN和STABLE表示活动的布局会显示在状态栏上面
-            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             //状态栏设置透明
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
