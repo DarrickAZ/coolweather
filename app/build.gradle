@@ -11,6 +11,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    //多渠道打包签名 新建百度文件夹（与main同级）新建AndroidManifest.xml 新建res java目录
+/*    productFlavors{
+        baidu{
+            applicationId "com.example.coolweather.baidu"
+        }
+    }*/
+
     signingConfigs {
         release {
             storeFile file("coolweather.jks")
