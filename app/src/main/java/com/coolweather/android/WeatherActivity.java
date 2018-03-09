@@ -47,7 +47,7 @@ import okhttp3.Response;
  * @author Darrick
  * @description 天气活动类
  */
-public class WeatherActivity extends AppCompatActivity {
+public class WeatherActivity extends BaseActivity {
 
     private static final String TAG = "WeatherActivity";
 

@@ -10,7 +10,9 @@ import com.coolweather.android.constant.UpConstant;
 import com.coolweather.android.util.MailHandler;
 import com.coolweather.android.util.PrintStackTraceUtil;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity{
+
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -44,7 +44,8 @@ import okhttp3.Response;
  * @description
  * @versions 1.0
  */
-public class ChooseAreaFragment extends Fragment {
+public class ChooseAreaFragment extends BaseFragment{
+    private static final String TAG = "ChooseAreaFragment";
 
     public static final int LEVEL_PROVINCE = 0;
     public static final int LEVEL_CITY = 1;
