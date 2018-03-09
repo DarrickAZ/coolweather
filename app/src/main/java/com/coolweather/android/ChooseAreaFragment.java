@@ -147,7 +147,7 @@ public class ChooseAreaFragment extends Fragment {
      *View.GONE===>设置控件不可见，但这个View在ViewGroup中不保留位置，会重新layout布局，不再占用空间，其后面
      */
     private void queryProvinces() {
-        titleText.setText("中国");
+        titleText.setText(getString(R.string.china));
         backButton.setVisibility(View.GONE);
         //优先选择从数据库查询
         provinceList = DataSupport.findAll(Province.class);
